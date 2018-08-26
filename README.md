@@ -22,7 +22,7 @@ Descriptions:
 ------
 The game looks like below. And your goal is slide the puzzle to orderly.<br>
  2|24| 8| 5| 4
-:---:|:---:|:---:|:---:|:---:
+---|---|---|---|---
 15| 2|23|10| 9
 20| 7|14|12| 3
  6|11|18|21|17
