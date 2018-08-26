@@ -93,7 +93,7 @@ Steps:
 
 <font size=4>**Part IV: Priority queue**</font>
 <br>
-Step:
+Steps:
 1. Use STL container [priority_queue](http://www.cplusplus.com/reference/queue/priority_queue/) is a easy way to implement priority queue
 2. Create a compare struct cmp for priority queue
 3. Push legal actions from Successor function into priority queue
