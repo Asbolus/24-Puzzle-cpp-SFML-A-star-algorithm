@@ -11,21 +11,18 @@
 I have poor English ability so I can't describe clearly and there may some grammar/word mistakes. My native language is Chinese so I will write down both English and Chinese.<br>
 I am a beginner, please give me some suggestions to improve my coding ability. English advice also. :)
 
-2|24|8|5|4
-----| ---| ---| ---  
-15| 2| 23|  10| 9
-
-
-
 Descriptions:
 ------
 The game looks like below. And your goal is slide the puzzle to orderly.<br>
+
  2|24| 8| 5| 4
 ---|---|---|---|---
-15| |23|10| 9
+15| t|23|10| 9
 20| 7|14|12| 3
  6|11|18|21|17
 16| 1|22|13|19
+
+
 <br>
 |&nbsp;| 1| 2| 3| 4|
 |:--:|:--:|:--:|:--:|:--:|
