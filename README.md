@@ -127,6 +127,7 @@ and the empty tile is at Row #1 (index starts from 0),<br>
 so 14 + 1 = 15 is odd.<br>
 
 You can see [here](https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html) to know why is that formula works.
+
 Using:
 ------
 If you don't know how to set. You can watch this [video](https://www.youtube.com/watch?v=axIgxBQVBg0) to set environment.
