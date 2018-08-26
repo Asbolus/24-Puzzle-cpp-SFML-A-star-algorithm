@@ -11,11 +11,10 @@
 I have poor English ability so I can't describe clearly and there may some grammar/word mistakes. My native language is Chinese so I will write down both English and Chinese.<br>
 I am a beginner, please give me some suggestions to improve my coding ability. English advice also. :)
 
-Age             | Time  | Food | Gold 
---------------- | ----  | ---  | ---  
-Feudal Age      | 02:10 |  500 |    0 
-Castle Age      | 02:40 |  800 |  200 
-Imperial Age    | 03:30 | 1000 |  800
+2|24|8|5|4
+----| ---| ---| ---  
+15| 2| 23|  10| 9
+
 
 
 Descriptions:
@@ -23,7 +22,7 @@ Descriptions:
 The game looks like below. And your goal is slide the puzzle to orderly.<br>
  2|24| 8| 5| 4
 ---|---|---|---|---
-15| 2|23|10| 9
+15| |23|10| 9
 20| 7|14|12| 3
  6|11|18|21|17
 16| 1|22|13|19
