@@ -49,7 +49,7 @@ It's no need to do because the puzzle **absolute** have solution. Depend on the 
 
 <font size=4>**Part II:  Manhattan distance**</font>
 <br>
-See [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry)
+See [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry)<br>
 Steps:
 
 1. Convert a state into a *n* × *n* matrix; remember the (x<sub>i</sub>, y<sub>i</sub>) coordination of each digit i
@@ -141,9 +141,9 @@ If you don't know how to set. You can watch this [video](https://www.youtube.com
 To be fix:
 ----------
 &nbsp;&nbsp;-Can just show shortest path <= 26 steps limited by the program window size.<br>
-&nbsp;&nbsp;&nbsp;If you want to see more than 26 steps, you can add "cout" into the *getPathString* function which in *A_star.cpp*. And then you can see all steps in CMD. You can also do some steps and then click "Show path" again, it will reduce the step count so you can see steps which is unseen before.
+&nbsp;&nbsp;&nbsp;&nbsp;If you want to see more than 26 steps, you can add "cout" into the *getPathString* function which in *A_star.cpp*. And then you can see all steps in CMD. You can also do some steps and then click "Show path" again, it will reduce the step count so you can see steps which is unseen before.<br>
 &nbsp;&nbsp;-Sometimes click "Show path" button will seems crash<br>
-&nbsp;&nbsp;&nbsp;I don't know it is solve too complex puzzle takes very long time or just crash 
+&nbsp;&nbsp;&nbsp;&nbsp;I don't know it is solve too complex puzzle takes very long time or just crash 
 accidental. If it happens, just close the program and rerun.<br>
 
 [Code reference](https://www.youtube.com/watch?v=NJZ2K6HPpl4)<br>
@@ -181,7 +181,7 @@ accidental. If it happens, just close the program and rerun.<br>
 
 <font size=4>**Part II:  Manhattan distance**</font>
 <br>
-[Manhattan distance](https://zh.wikipedia.org/wiki/%E6%9B%BC%E5%93%88%E9%A0%93%E8%B7%9D%E9%9B%A2)
+[Manhattan distance](https://zh.wikipedia.org/wiki/%E6%9B%BC%E5%93%88%E9%A0%93%E8%B7%9D%E9%9B%A2)<br>
 步驟:
 
 1. 將題目視為 *n* × *n* 座標; 紀錄每個位置 (x<sub>i</sub>, y<sub>i</sub>)
@@ -233,6 +233,7 @@ Manhattan distances和為: 18<br>
 5. 再將剛剛pop出的物件放入Successor function，直到得出解
 
 <font size=4>**補充**</font>
+<br>
 如果你想知道N-puzzle是否有解，先看看該puzzle的大小，*n* x *n*中的*n*為奇數還是偶數，其中
 N = *n* x *n* - 1.<br>
 如果*n*是奇數且反置(inversion)的數字為偶數，則有解
@@ -272,9 +273,9 @@ N = *n* x *n* - 1.<br>
 待修正：
 ----------
 &nbsp;&nbsp;-最短路徑最多只能顯示28步，因為程式視窗太小<br>
-&nbsp;&nbsp;&nbsp;如果你想看更多步，可以在*A_star.cpp*裡面的*getPathString* function中增加"cout"，如此一來就可以在CMD視窗中看到所有步驟。你也可以把前面的解先走過，如此一來最佳解的路徑就會變短，再按一次"Show path"就可以看到之後的步驟。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你想看更多步，可以在*A_star.cpp*裡面的*getPathString* function中增加"cout"，如此一來就可以在CMD視窗中看到所有步驟。你也可以把前面的解先走過，如此一來最佳解的路徑就會變短，再按一次"Show path"就可以看到之後的步驟。<br>
 &nbsp;&nbsp;-有時點擊"Show path"按鈕程式好像會當機<br>
-&nbsp;&nbsp;&nbsp;我不知道那是因為解一個太複雜的puzzle要花費非常多時間還是這只是偶發地發生。如果出現這種狀況，請重新執行程式<br>
+&nbsp;&nbsp;&nbsp;&nbsp;我不知道那是因為解一個太複雜的puzzle要花費非常多時間還是這只是偶發地發生。如果出現這種狀況，請重新執行程式<br>
 
 
 [程式碼參考](https://www.youtube.com/watch?v=NJZ2K6HPpl4)<br>
