@@ -126,7 +126,7 @@ because its state representation 127436A85DB9CEF (discarding 0) has 14 disordere
 and the empty tile is at Row #1 (index starts from 0),<br>
 so 14 + 1 = 15 is odd.<br>
 
-You can see [here](https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html) to know why is that formula works.
+You can see [here](https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html) to know why that formula works.
 
 Using:
 ------
