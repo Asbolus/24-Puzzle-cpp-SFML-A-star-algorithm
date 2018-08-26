@@ -29,7 +29,7 @@ The game looks like below. And your goal is slide the puzzle to orderly.<br>
 |15|16|17|18|19|
 |20|21|22|23|24|
 
-More details about the N-puzzle game, you can see [Wiki](https://en.wikipedia.org/wiki/15_puzzle)
+More details about the N-puzzle game, you can see [Wiki](https://en.wikipedia.org/wiki/15_puzzle)<br>
 This program running looks like below. The path show right is using [A* algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the shortest path, there is 4 parts to build the system.<br>
 ![GamePNG](https://i.imgur.com/lqrRdno.png)
 
@@ -141,7 +141,7 @@ If you don't know how to set. You can watch this [video](https://www.youtube.com
 To be fix:
 ----------
 &nbsp;&nbsp;-Can just show shortest path <= 26 steps limited by the program window size.<br>
-&nbsp;&nbsp;&nbsp;If you want to see more than 26 steps, you can add "cout" into the *getPathString* function which in *A_star.cpp*. And then you can see all steps in CMD.
+&nbsp;&nbsp;&nbsp;If you want to see more than 26 steps, you can add "cout" into the *getPathString* function which in *A_star.cpp*. And then you can see all steps in CMD. You can also do some steps and then click "Show path" again, it will reduce the step count so you can see steps which is unseen before.
 &nbsp;&nbsp;-Sometimes click "Show path" button will seems crash<br>
 &nbsp;&nbsp;&nbsp;I don't know it is solve too complex puzzle takes very long time or just crash 
 accidental. If it happens, just close the program and rerun.<br>
@@ -170,7 +170,7 @@ accidental. If it happens, just close the program and rerun.<br>
 |15|16|17|18|19|
 |20|21|22|23|24|
 
-更多關於該遊戲的說明，可以參考[數字推盤遊戲（n-puzzle）](https://zh.wikipedia.org/wiki/%E6%95%B8%E5%AD%97%E6%8E%A8%E7%9B%A4%E9%81%8A%E6%88%B2)
+更多關於該遊戲的說明，可以參考[數字推盤遊戲（n-puzzle）](https://zh.wikipedia.org/wiki/%E6%95%B8%E5%AD%97%E6%8E%A8%E7%9B%A4%E9%81%8A%E6%88%B2)<br>
 程式執行結果如下圖。右邊顯示的路徑是利用[A* 演算法](https://zh.wikipedia.org/wiki/A*%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)找出最短路徑，整個系統分成四個部分。
 ![GamePNG](https://i.imgur.com/lqrRdno.png)
 
@@ -272,7 +272,7 @@ N = *n* x *n* - 1.<br>
 待修正：
 ----------
 &nbsp;&nbsp;-最短路徑最多只能顯示28步，因為程式視窗太小<br>
-&nbsp;&nbsp;&nbsp;如果你想看更多步，可以在*A_star.cpp*裡面的*getPathString* function中增加"cout"，如此一來就可以在CMD視窗中看到所有步驟
+&nbsp;&nbsp;&nbsp;如果你想看更多步，可以在*A_star.cpp*裡面的*getPathString* function中增加"cout"，如此一來就可以在CMD視窗中看到所有步驟。你也可以把前面的解先走過，如此一來最佳解的路徑就會變短，再按一次"Show path"就可以看到之後的步驟。
 &nbsp;&nbsp;-有時點擊"Show path"按鈕程式好像會當機<br>
 &nbsp;&nbsp;&nbsp;我不知道那是因為解一個太複雜的puzzle要花費非常多時間還是這只是偶發地發生。如果出現這種狀況，請重新執行程式<br>
 
