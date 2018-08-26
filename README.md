@@ -5,7 +5,7 @@
 **Code reference from FamTrinli's YouTube channel**
 **Whole program architecture idea reference from Chuan-Jie Lin**
 
-[YouTube video link](http://www.youtube.com/watch?v=LPXi9uIxKpQ)
+[YouTube video link](http://www.youtube.com/watch?v=LPXi9uIxKpQ)<br>
 [![](http://img.youtube.com/vi/LPXi9uIxKpQ/0.jpg)](http://www.youtube.com/watch?v=LPXi9uIxKpQ "24-Puzzle")
 
 I have poor English ability so I can't describe clearly and there may some grammar/word mistakes. My native language is Chinese so I will write down both English and Chinese.<br>
@@ -20,13 +20,14 @@ The game looks like below. And your goal is slide the puzzle to orderly.
 |20| 7|14|12| 3|
 | 6|11|18|21|17|
 |16| 1|22|13|19|
-
+<br>
 |&nbsp;| 1| 2| 3| 4|
 |:--:|:--:|:--:|:--:|:--:|
 | 5| 6| 7| 8| 9|
 |10|11|12|13|14|
 |15|16|17|18|19|
 |20|21|22|23|24|
+<br>
 More details about the N-puzzle game, you can see [Wiki](https://en.wikipedia.org/wiki/15_puzzle)
 This program running looks like below. The path show right is using [A* algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm) to find the shortest path, there is 4 parts to build the system.<br>
 ![GamePNG](https://i.imgur.com/lqrRdno.png)
@@ -39,7 +40,7 @@ This program running looks like below. The path show right is using [A* algorith
 |Spent cost|	cost_g|	integer|	Cost (steps) already spent from the initial state to this state|
 |Estimated future cost(Heuristic value)|	cost_h|	integer|	Estimated cost (steps) from this state to the goal state|
 |Total cost| cost_f |integer |cost_f = cost_g + cost_h|
-
+<br>
 <font size=4>**Part I: Solvability decision**</font>
 It's no need to do because the puzzle **absolute** have solution. Depend on the puzzle  is slide the orderly puzzle randomly.<br>
 
@@ -51,18 +52,18 @@ Steps:
 2. Also convert the goal state into a *n* × *n* matrix and remember the (a<sub>i</sub>, b<sub>i</sub>) coordination of each digit i
 3. The Manhattan distance is Σ<sub>i</sub> | x<sub>i</sub> - a<sub>i</sub> | + | y<sub>i</sub> - b<sub>i</sub> |
 
-Current state
+Current state<br>
 | 7| 2| 4|
 |:--:|:--:|:--:|
 | 5|  | 6|
 | 8| 3| 1|
-
-Goal state
+<br>
+Goal state<br>
 |&nbsp;| 1| 2|
 |:--:|:--:|:--:|
 | 3| 4| 5|
 | 6| 7| 8|
-
+<br>
 | Digit| Current position| Goal position|     Manhattan distance      |
 |:----:|:---------------:|:------------:|:---------------------------:|
 |     1|      (2,2)      |     (0,1)    |\|2-0\| + \|2-1\| = 2 + 1 = 3|
@@ -73,7 +74,7 @@ Goal state
 |     6|      (1,2)      |     (2,0)    |\|1-2\| + \|2-0\| = 1 + 2 = 3|
 |     7|      (0,0)      |     (2,1)    |\|0-2\| + \|0-1\| = 2 + 1 = 3|
 |     8|      (2,0)      |     (2,2)    |\|2-2\| + \|0-2\| = 0 + 2 = 2|
-
+<br>
 Sum of Manhattan distances: 18<br>
 
 <font size=4>**Part III: Successor function**</font>
@@ -94,19 +95,21 @@ Step:
 
 <font size=4>**Additional**</font>
 If you want to know the puzzle is solvable or not,  check the board of a N-puzzle game is *n* x *n* square where N = *n* x *n* - 1.<br>
-If *n* is odd, and the number of disorder digits is even, the problem is solvable.
+If *n* is odd, and the number of disorder digits is even, the problem is solvable.<br>
 | 3| 1| 2|
 |:--:|:--:|:--:|
 | 4| 5| 7|
 | 6| 8|  |
+<br>
 is unsolvable, because its state representation 31245768 (discarding 0) has 3 disordered pairs: (1,3) (2,3) (6,7).<br><br>
 
-If *n* is even, and the index of the row containing the epmty tile plus the number of disorder digits is even, the problem is solvable.
+If *n* is even, and the index of the row containing the epmty tile plus the number of disorder digits is even, the problem is solvable.<br>
 | 1| 2| 7| 4|
 |:--:|:--:|:--:|:--:|
 | 3|  | 6|10|
 | 8| 5|13| 1|
 | 9|12|14|15|
+<br>
 is unsolvable,<br>
 because its state representation 127436A85DB9CEF (discarding 0) has 14 disordered pairs: (3,7) (4,7) (5,7) (6,7) (3,4) (5,6) (5,A) (8,A) (9,A) (5,8) (9,D) (B,D) (C,D) (9,B),<br>
 and the empty tile is at Row #1 (index starts from 0),<br>
@@ -139,20 +142,21 @@ accidental. If it happens, just close the program and rerun.<br>
 
 介紹：
 ----------
-遊戲形式如下，可以滑動空格，你必須將其排序。
+遊戲形式如下，可以滑動空格，你必須將其排序。<br>
 | 2|24| 8| 5| 4|
 |:--:|:--:|:--:|:--:|:--:|
 |15|  |23|10| 9|
 |20| 7|14|12| 3|
 | 6|11|18|21|17|
 |16| 1|22|13|19|
-
+<br>
 |&nbsp;| 1| 2| 3| 4|
 |:--:|:--:|:--:|:--:|:--:|
 | 5| 6| 7| 8| 9|
 |10|11|12|13|14|
 |15|16|17|18|19|
 |20|21|22|23|24|
+<br>
 更多關於該遊戲的說明，可以參考[數字推盤遊戲（n-puzzle）](https://zh.wikipedia.org/wiki/%E6%95%B8%E5%AD%97%E6%8E%A8%E7%9B%A4%E9%81%8A%E6%88%B2)
 程式執行結果如下圖。右邊顯示的路徑是利用[A* 演算法](https://zh.wikipedia.org/wiki/A*%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)找出最短路徑，整個系統分成四個部分。
 ![GamePNG](https://i.imgur.com/lqrRdno.png)
@@ -169,18 +173,18 @@ accidental. If it happens, just close the program and rerun.<br>
 2. 將排序好的狀態視為 *n* × *n* 紀錄每個位置 (a<sub>i</sub>, b<sub>i</sub>)
 3. Manhattan distance 為 Σ<sub>i</sub> | x<sub>i</sub> - a<sub>i</sub> | + | y<sub>i</sub> - b<sub>i</sub> |
 
-題目
+題目<br>
 | 7| 2| 4|
 |:--:|:--:|:--:|
 | 5|  | 6|
 | 8| 3| 1|
-
-目標
+<br>
+目標<br>
 |&nbsp;| 1| 2|
 |:--:|:--:|:--:|
 | 3| 4| 5|
 | 6| 7| 8|
-
+<br>
 |  數字|           目前位置|       目標位置|     Manhattan distance      |
 |:----:|:---------------:|:------------:|:---------------------------:|
 |     1|      (2,2)      |     (0,1)    |\|2-0\| + \|2-1\| = 2 + 1 = 3|
@@ -191,7 +195,7 @@ accidental. If it happens, just close the program and rerun.<br>
 |     6|      (1,2)      |     (2,0)    |\|1-2\| + \|2-0\| = 1 + 2 = 3|
 |     7|      (0,0)      |     (2,1)    |\|0-2\| + \|0-1\| = 2 + 1 = 3|
 |     8|      (2,0)      |     (2,2)    |\|2-2\| + \|0-2\| = 0 + 2 = 2|
-
+<br>
 Manhattan distances和為: 18<br>
 
 <font size=4>**Part III: Successor function**</font>
@@ -219,12 +223,13 @@ N = *n* x *n* - 1.<br>
 | 6| 8|  |
 是無解的，因為該題目為 31245768 (去除 0) 有3對反置的數字: (1,3) (2,3) (6,7)<br><br>
 
-如果*n*是偶數，且含有空格的那一列所在的列數 + 反置的數字和為偶數，則有解
+如果*n*是偶數，且含有空格的那一列所在的列數 + 反置的數字和為偶數，則有解<br>
 | 1| 2| 7| 4|
 |:--:|:--:|:--:|:--:|
 | 3|  | 6|10|
 | 8| 5|13| 1|
 | 9|12|14|15|
+<br>
 是無解的<br>
 因為該題目為 127436A85DB9CEF (去除 0) 有14對反置的數字: (3,7) (4,7) (5,7) (6,7) (3,4) (5,6) (5,A) (8,A) (9,A) (5,8) (9,D) (B,D) (C,D) (9,B)<br>
 且空格位於 Row #1 (由0開始算)<br>
