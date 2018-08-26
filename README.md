@@ -273,8 +273,6 @@ N = *n* x *n* - 1.<br>
 ----------
 &nbsp;&nbsp;-最短路徑最多只能顯示28步，因為程式視窗太小<br>
 &nbsp;&nbsp;&nbsp;如果你想看更多步，可以在*A_star.cpp*裡面的*getPathString* function中增加"cout"，如此一來就可以在CMD視窗中看到所有步驟
-&nbsp;&nbsp;-太複雜的puzzle會花非常長的時間來解
-&nbsp;&nbsp;&nbsp;如果"Show path"執行太久都沒有得出解，請重啟程式
 &nbsp;&nbsp;-有時點擊"Show path"按鈕程式好像會當機<br>
 &nbsp;&nbsp;&nbsp;我不知道那是因為解一個太複雜的puzzle要花費非常多時間還是這只是偶發地發生。如果出現這種狀況，請重新執行程式<br>
 
