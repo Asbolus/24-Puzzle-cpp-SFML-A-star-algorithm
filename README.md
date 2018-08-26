@@ -14,12 +14,12 @@ I am a beginner, please give me some suggestions to improve my coding ability. E
 Descriptions:
 ------
 The game looks like below. And your goal is slide the puzzle to orderly.<br>
-| 2|24| 8| 5| 4|<br>
-|:--:|:--:|:--:|:--:|:--:|<br>
-|15|  |23|10| 9|<br>
-|20| 7|14|12| 3|<br>
-| 6|11|18|21|17|<br>
-|16| 1|22|13|19|<br>
+ 2|24| 8| 5| 4
+:--:|:--:|:--:|:--:|:--:
+15|  |23|10| 9
+20| 7|14|12| 3
+ 6|11|18|21|17
+16| 1|22|13|19
 <br>
 |&nbsp;| 1| 2| 3| 4|
 |:--:|:--:|:--:|:--:|:--:|
