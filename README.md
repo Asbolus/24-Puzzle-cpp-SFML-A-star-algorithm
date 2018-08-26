@@ -44,9 +44,11 @@ This program running looks like below. The path show right is using [A* algorith
 |Total cost| cost_f |integer |cost_f = cost_g + cost_h|
 
 <font size=4>**Part I: Solvability decision**</font>
+<br>
 It's no need to do because the puzzle **absolute** have solution. Depend on the puzzle  is slide the orderly puzzle randomly.<br>
 
 <font size=4>**Part II:  Manhattan distance**</font>
+<br>
 See [Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry)
 Steps:
 
@@ -82,6 +84,7 @@ Goal state
 Sum of Manhattan distances: 18<br>
 
 <font size=4>**Part III: Successor function**</font>
+<br>
 Input: a state = (stateRps, lastCostOfG, lastActionSequence)<br>
 Steps:
 1. Convert a state into an *n* × *n* matrix
@@ -89,6 +92,7 @@ Steps:
 3. Swap 0 with the digits in (x<sub>0</sub>, y<sub>0</sub>-1), (x<sub>0</sub>, y<sub>0</sub>+1), (x<sub>0</sub>-1, y<sub>0</sub>), (x<sub>0</sub>+1, y<sub>0</sub>) if they are legal actions
 
 <font size=4>**Part IV: Priority queue**</font>
+<br>
 Step:
 1. Use STL container [priority_queue](http://www.cplusplus.com/reference/queue/priority_queue/) is a easy way to implement priority queue
 2. Create a compare struct cmp for priority queue
@@ -98,6 +102,7 @@ Step:
 
 
 <font size=4>**Additional**</font>
+<br>
 If you want to know the puzzle is solvable or not,  check the board of a N-puzzle game is *n* x *n* square where N = *n* x *n* - 1.<br>
 If *n* is odd, and the number of disorder digits is even, the problem is solvable.<br>
 
@@ -170,9 +175,11 @@ accidental. If it happens, just close the program and rerun.<br>
 
 
 <font size=4>**Part I: 判斷是否有解**</font>
+<br>
 這步不需要做，因為本程式**絕對**有解。該程式生成的隨機puzzle是由已排序好的puzzle亂數移動而成的。<br>
 
 <font size=4>**Part II:  Manhattan distance**</font>
+<br>
 [Manhattan distance](https://zh.wikipedia.org/wiki/%E6%9B%BC%E5%93%88%E9%A0%93%E8%B7%9D%E9%9B%A2)
 步驟:
 
@@ -208,6 +215,7 @@ accidental. If it happens, just close the program and rerun.<br>
 Manhattan distances和為: 18<br>
 
 <font size=4>**Part III: Successor function**</font>
+<br>
 函數參數 = (stateRps, lastCostOfG, lastActionSequence)<br>
 步驟:
 1. 將題目視為 *n* × *n* 座標
@@ -215,6 +223,7 @@ Manhattan distances和為: 18<br>
 3. 如果0的四周(x<sub>0</sub>, y<sub>0</sub>-1), (x<sub>0</sub>, y<sub>0</sub>+1), (x<sub>0</sub>-1, y<sub>0</sub>), (x<sub>0</sub>+1, y<sub>0</sub>)有可合法移動的格子，將其交換
 
 <font size=4>**Part IV: Priority queue**</font>
+<br>
 步驟:
 1. 使用STL container的[priority_queue](http://www.cplusplus.com/reference/queue/priority_queue/)
 2. 製作一個比較用的struct cmp給priority queue使用
