@@ -101,8 +101,8 @@ Steps:
 5. Call Successor function again where input is the object which just pop, repeat until solve the puzzle
 
 
-<font size=4>**Additional**</font>
-<br>
+Additional:
+------
 If you want to know the puzzle is solvable or not,  check the board of a N-puzzle game is *n* x *n* square where N = *n* x *n* - 1.<br>
 If *n* is odd, and the number of disorder digits is even, the problem is solvable.<br>
 
@@ -232,8 +232,8 @@ Manhattan distances和為: 18<br>
 4. Pop priority queue，會得到最小cost的行動
 5. 再將剛剛pop出的物件放入Successor function，直到得出解
 
-<font size=4>**補充**</font>
-<br>
+補充：
+------
 如果你想知道N-puzzle是否有解，先看看該puzzle的大小，*n* x *n*中的*n*為奇數還是偶數，其中
 N = *n* x *n* - 1.<br>
 如果*n*是奇數且反置(inversion)的數字為偶數，則有解
